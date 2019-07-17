@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end 
   
   post '/checkout' do 
-    session[:session_secret][:item] = params[:item]
+    
     erb :display_item
   end 
 end
