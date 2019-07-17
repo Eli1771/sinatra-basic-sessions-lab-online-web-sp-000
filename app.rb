@@ -1,7 +1,7 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  session[:session_secret] = {}
+  configure 
   get '/' do 
     erb :index
   end 
